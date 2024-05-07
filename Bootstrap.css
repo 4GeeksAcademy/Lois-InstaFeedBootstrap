@@ -1,0 +1,193 @@
+* {
+    /* Elimina el borde rojo para depuración */
+}
+
+body {
+    height: 100%; /* Asegura que el cuerpo tenga altura total */
+    display: flex; /* Para centrar elementos */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    margin: 0; /* Elimina márgenes por defecto */
+}
+
+.iconoinsta {
+    font-family: Helvetica; /* Fuente de la marca de Instagram */
+    color: black; /* Color negro para el texto */
+}
+
+.ic {
+    color: black; /* Color del ícono de Instagram */
+}
+
+.sonbreadogris {
+    background-color: gray; /* Fondo gris para los desplegables */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.ic2 {
+    color: white; /* Color blanco para el ícono del menú desplegable */
+    font-size: 1.2rem; /* Tamaño del ícono */
+}
+
+.tablaiconos {
+    display: flex;
+    flex-direction: row; /* Asegura disposición horizontal */
+    justify-content: center; /* Mantiene los íconos centrados */
+    align-items: center; /* Alinea verticalmente */
+    gap: 5px; /* Controla el espacio entre íconos */
+  }
+  
+.nav-link {
+    padding: 0; /* Sin espaciado adicional */
+    margin: 0; /* Sin margen adicional */
+    width: auto; /* Permite que el ancho sea ajustado al contenido */
+    text-align: left; /* Alinea el contenido a la izquierda para evitar centrado excesivo */
+}
+
+.ico { 
+    color: gray; /* Color gris para el ícono de cuadrícula */
+    margin-right: 0; /* Ajusta el margen derecho para acercar íconos */
+}
+
+.ico2 { 
+    color: gray; /* Color gris para el ícono cuadrado */
+    margin-right: 0; /* Ajusta el margen derecho para acercar íconos */
+}
+
+.container {
+    padding: 10px; /* Espaciado interno */
+    text-align: center; /* Centra las fotos */
+}
+
+.row{
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+.card {
+    aspect-ratio: 1/1; /* Relación de aspecto cuadrada */
+    display: flex; /* Flex para centrar elementos */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    text-align: center; /* Centra las fotos */
+}    
+
+.card img {
+    width: 100%; /* Ocupa todo el ancho */
+    object-fit: cover; /* Ajusta la imagen sin distorsión */
+    border-radius: 5px; /* Bordes redondeados */
+    height: 100%; /* Altura completa */
+    text-align: center; /* Centra las fotos */
+}
+
+.fotospost {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacio entre los posts */
+  }
+  
+.post{
+    display: flex;
+    width: 400px;  /* Ancho fijo para consistencia */
+    height: 400px; /* Altura fija para consistencia */
+    flex-direction: column;  /* Para que el contenido se disponga verticalmente */
+    align-items: center;  /* Centrar elementos en el eje horizontal */
+    margin: auto;  /* Centrar el contenedor en el espacio disponible */
+    border: 1px solid #ddd;
+    padding: 10px 0px;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
+
+/* Cabecera para mantener el texto y la fecha */
+.cabecerafoto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;  /* Para que el contenido ocupe todo el ancho */
+}
+
+/* Contenedor para las imágenes */
+.img-fluid {
+    width: 100%;  /* Ancho de la imagen dentro del post */
+    height: 250px;  /* Altura fija para consistencia */
+    overflow: hidden;  /* Evita desbordamiento si la imagen es más grande */
+}
+  
+.img-fluid img {
+    width: 100%;  /* Asegura que la imagen cubre todo el contenedor */
+    height: 100%;  /* Asegura que la imagen cubre todo el contenedor */
+    object-fit: cover;  /* Ajustar la imagen para cubrir el espacio sin deformarse */
+    object-position: center;  /* Centra la imagen en el contenedor */
+}
+
+/* Pie de foto con tamaño más pequeño */
+.pie-de-foto {
+    font-size: 12px; /* Texto más pequeño */
+    text-align: left; /* Alineado a la izquierda */
+    width: 100%; /* Asegurar que ocupa todo el ancho */
+    padding-left: 10px;
+    
+  }
+
+/* Texto en negrita y más grande en la parte inferior izquierda */
+.texto-negrita {
+    font-weight: bold; /* Negrita */
+    font-size: 14px; /* Tamaño más grande que el pie de foto */
+    text-align: left; /* Alineado a la izquierda */
+    width: 100%; /* Asegurar que ocupa todo el ancho */
+    padding-left: 10px;
+  }
+
+.textosuperior {
+    font-weight: bold;
+    padding-left: 10px;
+  }
+  
+.fecha {
+    font-size: 12px; /* Texto más pequeño */
+    font-style:normal;
+    text-align: right; /* Alinea a la derecha */
+    padding-right: 10px;
+}
+  
+.mb-3 {
+    margin-bottom: 15px;
+}
+
+
+.cajon-escribir {
+    border: 1px solid gray; /* Borde gris */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: white; /* Fondo blanco */
+    width: 100%; /* Ancho completo */
+}
+
+.iconosmodal {
+    padding: 10px 20px; /* Espaciado para los íconos */
+    color: black; /* Color de los íconos */
+    display: flex; /* Flex para alinear íconos */
+}
+
+.ubicación {
+    margin-left: 10px; /* Espaciado para el ícono de ubicación */
+}
+
+.dropdown-menu {
+    position: absolute; /* Posicionamiento para el menú desplegable */
+    width: 100px; /* Ancho del menú */
+    z-index: 1000; /* Para evitar superposición */
+}
+
+.dropdown-item {
+    font-size: 0.8rem; /* Tamaño de letra para ítems del menú desplegable */
+}
+
+.modal-footer {
+    text-align: right; /* Alinea los botones a la derecha */
+}
+
+
+
